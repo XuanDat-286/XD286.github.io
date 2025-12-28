@@ -1,1 +1,58 @@
+/* Cuộn trang mượt mà */
+html {
+    scroll-behavior: smooth;
+}
 
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #333;
+}
+
+/* Màu chủ đạo cho Thanh điều hướng */
+.custom-nav {
+    background-color: #0d1b2a !important; /* Xanh Navy thẫm */
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+/* Hero Section với Gradient chuyên nghiệp */
+.hero-section {
+    height: 60vh;
+    background: linear-gradient(135deg, #1b263b 0%, #415a77 100%);
+    border-bottom: 5px solid #e0e1dd;
+}
+
+/* Tiêu đề mục */
+.section-title {
+    position: relative;
+    padding-bottom: 15px;
+    font-weight: 700;
+    color: #1b263b;
+}
+
+.section-title::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 60px;
+    height: 4px;
+    background-color: #778da9;
+    border-radius: 2px;
+}
+
+/* Hiệu ứng khi rê chuột vào Card tài liệu */
+.card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.15) !important;
+}
+
+/* Tùy chỉnh danh sách bài Lab */
+.list-group-item:hover {
+    background-color: #f8f9fa;
+    border-left: 4px solid #1b263b;
+}
